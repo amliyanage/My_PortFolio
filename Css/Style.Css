@@ -108,6 +108,129 @@ header nav button{
     margin-left: 109px;
 }
 
+/*------------setting-----------------*/
+
+header .btn{
+    background-color: #fff;
+    width: 12em;
+    height: 5em;
+    border-radius: 10em;
+
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1),
+                inset 0 8px 8px rgba(0, 0, 0, .1),
+                inset 0 -4px 4px rgba(0, 0, 0, .1);
+
+    position: relative;
+    margin-left: 6rem;
+
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .btn_indicator{
+    background-color: #fff;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 9px;
+    left: 7px;
+
+    box-shadow: 0px 8px 40px rgba(0, 0, 0,.2);
+
+    transition: transform .3s ease;
+}
+
+header .btn_icon-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .btn_icon{
+    color : yellow;
+    font-size: 2rem;
+}
+
+/*---------------dark--------------*/
+body.darkMode{
+    background-color: #000;
+}
+.darkMode .btn_indicator{
+    transform: translateX(7em);
+    background-color: #000;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
+}
+
+.darkMode .btn_icon{
+    color: #FFF;
+}
+
+.darkMode .btn{
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, .3),
+                inset 0 8px 8px rgba(0, 0, 0, .3),
+                inset 0 -4px 4px rgba(0, 0, 0, .3);
+}
+
+.settings{
+    position: absolute;
+    right: 20vh;
+    padding: 1rem;
+    border: 2px solid #000;
+    background-color: #FFF;
+    border-radius: 13px;
+    display: none;
+}
+
+.settings.clicked{
+    display: inline;
+}
+
+.settings .colors > *{
+    width: 4rem;
+    height: 4rem;
+    float: left;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.settings .colors > :first-child{
+    background-color: #7B1DF3;
+}
+
+.settings .colors > :nth-child(2){
+    background-color: #C9F31D;
+}
+
+.settings .colors > :nth-child(3){
+    background-color: #05FF00;
+}
+
+.settings .colors > :last-child{
+    background-color: #0094FF;
+}
+
+.settings h3{
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    margin: 20px;
+}
+
+.settings{
+    text-align: center;
+    align-items: center;
+}
+
 /* -------------------------------------------------------------star home page ------------------------------------------*/
 
 .homePage{
@@ -174,32 +297,36 @@ header nav button{
     letter-spacing: 1.75px;
     background: #7B1DF3;
     border-radius: 7px;
-    border: 2px solid black;
-    transition: border-color 0.3s ease;
 }
 
-.homePage .dis button:hover{
-    animation: borderAnimation 2s infinite linear;
+.homePage .dis button::before,
+.homePage .dis button::after{
+    background-color: #7B1DF3;
+    width: 245.667px;
+    height: 87px;
+    position: absolute;
+    top: 24rem;
+    left: -0.0vh;
+    border-radius: 20px;
+    z-index: -1;
+    content: "";
+    opacity: 0.7;
 }
 
-@keyframes borderAnimation {
-    0% {
-      border-color: black;
-    }
-    25% {
-      border-color: red;
-    }
-    50% {
-      border-color: black;
-    }
-    75% {
-      border-color: blue;
-    }
-    100% {
-      border-color: black;
-    }
-  }
+.homePage .dis button::before{
+    animation: anim 2s ease-out infinite;
+}
 
+.homePage .dis button::after{
+    animation: anim 2s 1s ease-out infinite;
+}
+
+@keyframes anim{
+    100%{
+        transform: scale(1.5,2);
+        opacity: 0;
+    }
+}
 
 .homePage .images > *{
     position: absolute;
