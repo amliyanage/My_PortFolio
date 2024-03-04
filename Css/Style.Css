@@ -108,3 +108,173 @@ header nav button{
     margin-left: 109px;
 }
 
+/* -------------------------------------------------------------star home page ------------------------------------------*/
+
+.homePage{
+    position: relative;
+    top: 7rem;
+    z-index: -1;
+}
+
+.homePage .dis{
+    position: relative;
+    top: 204px;
+    left: 170px;
+    width: 790px;
+}
+
+.homePage .dis h3{
+    color: rgba(0, 0, 0, 0.35);
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    margin-bottom: 25px;
+}
+
+.homePage .dis h1{
+    color: #7B1DF3;
+    font-family: Roboto;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.9px;
+    margin-bottom: 9px;
+}
+
+.homePage .dis h1~h1{
+    color: #000;
+    margin-bottom: 23px;
+}
+
+.homePage .dis p{
+    color: #9CB1B1;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.32px;
+    margin-bottom: 64px;
+}
+
+.homePage .dis button{
+    width: 245.667px;
+    height: 87px;
+    padding: 31px 60px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.75px;
+    background: #7B1DF3;
+    border-radius: 7px;
+    border: 2px solid black;
+    transition: border-color 0.3s ease;
+}
+
+.homePage .dis button:hover{
+    animation: borderAnimation 2s infinite linear;
+}
+
+@keyframes borderAnimation {
+    0% {
+      border-color: black;
+    }
+    25% {
+      border-color: red;
+    }
+    50% {
+      border-color: black;
+    }
+    75% {
+      border-color: blue;
+    }
+    100% {
+      border-color: black;
+    }
+  }
+
+
+.homePage .images > *{
+    position: absolute;
+}
+
+.homePage .images >:first-child{
+    width: 679px;
+    height: 769px;
+    top: 38.36px;
+    right: 152px;
+}
+
+.homePage .images >:nth-child(2){
+    width: 65px;
+    height: 67px;
+    top: 59px;
+    right: 177px;
+    animation: upDown 2s infinite ease;
+}
+
+.homePage .images >:nth-child(3){
+    width: 144px;
+    height: 144px;
+    top: 95px;
+    right: 692px;
+    animation: upDown 2s infinite ease;
+}
+
+.homePage .images >:nth-child(4){
+    width: 327px;
+    top: 235px;
+    right: 36px;
+    animation: upDown 2s infinite ease;
+}
+
+.homePage .images >:nth-child(5){
+    width: 58px;
+    height: 54px;
+    top:417.06px;
+    right: 825.21px;
+    animation: upDown 2s infinite ease;
+}
+
+.homePage .images >:nth-child(6){
+    width: 327px;
+    right: 533px;
+    top: 593px;
+    animation: upDown 2s infinite ease;
+}
+
+.homePage .images >:nth-child(7){
+    width: 159px;
+    height: 159px;
+    top: 626px;
+    right: 47px;
+    animation: upDown 2s infinite ease;
+}
+
+.homePage .images >:last-child{
+    width: 43px;
+    height: 44px;
+    right: 221px;
+    top: 736px;
+    animation: upDown 2s infinite ease;
+}
+
+@keyframes upDown{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
