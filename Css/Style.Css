@@ -9,6 +9,23 @@
     border: none;
 }
 
+
+:root{
+    --background-color : #fff;
+    --text : #000;
+    --purple : #7B1DF3;
+}
+
+body.alt-colors {
+    --background-color : #252525;
+    --text : #fff;
+}
+
+
+body{
+    background-color: var(--background-color);
+}
+
 .circles > *{
     filter: blur(210px);
     position: fixed;
@@ -44,7 +61,7 @@
 header{
     width: 100%;
     height: 112px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid;
     position: fixed;
     backdrop-filter: blur(10px);
 }
@@ -58,7 +75,7 @@ header nav ul{
 }
 
 header nav h1{
-    color: #000;
+    color: var(--text);
     font-family: "Lily Script One";
     font-size: 30px;
     font-style: normal;
@@ -69,7 +86,7 @@ header nav h1{
 }
 
 nav ul li{
-    color: #000;
+    color: var(--text);
     font-family: "DM Sans";
     font-size: 18px;
     font-style: normal;
@@ -82,7 +99,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-    color: #7B1DF3;
+    color: var(--purple);
 }
 
 header nav img{
@@ -96,7 +113,7 @@ header nav button{
     width: 134px;
     height: 51px;
     border-radius: 26px;
-    background: #7B1DF3;
+    background: var(--purple);
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
@@ -158,17 +175,15 @@ header .btn_icon{
 }
 
 /*---------------dark--------------*/
-body.darkMode{
-    background-color: #000;
-}
+
 .darkMode .btn_indicator{
     transform: translateX(7em);
-    background-color: #000;
+    background-color: var(--text);
     box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
 }
 
 .darkMode .btn_icon{
-    color: #FFF;
+    color: #000;
 }
 
 .darkMode .btn{
@@ -181,8 +196,8 @@ body.darkMode{
     position: absolute;
     right: 20vh;
     padding: 1rem;
-    border: 2px solid #000;
-    background-color: #FFF;
+    border: 2px solid var(--text);
+    background-color: var(--background-color);
     border-radius: 13px;
     display: none;
 }
@@ -216,7 +231,7 @@ body.darkMode{
 }
 
 .settings h3{
-    color: #000;
+    color: var(--text);
     font-family: "DM Sans";
     font-size: 18px;
     font-style: normal;
@@ -231,177 +246,4 @@ body.darkMode{
     align-items: center;
 }
 
-/* -------------------------------------------------------------star home page ------------------------------------------*/
-
-.homePage{
-    position: relative;
-    top: 7rem;
-    z-index: -1;
-}
-
-.homePage .dis{
-    position: relative;
-    top: 204px;
-    left: 170px;
-    width: 790px;
-}
-
-.homePage .dis h3{
-    color: rgba(0, 0, 0, 0.35);
-    font-family: Roboto;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2.7px;
-    margin-bottom: 25px;
-}
-
-.homePage .dis h1{
-    color: #7B1DF3;
-    font-family: Roboto;
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 3.9px;
-    margin-bottom: 9px;
-}
-
-.homePage .dis h1~h1{
-    color: #000;
-    margin-bottom: 23px;
-}
-
-.homePage .dis p{
-    color: #9CB1B1;
-    font-family: Roboto;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.32px;
-    margin-bottom: 64px;
-}
-
-.homePage .dis button{
-    width: 245.667px;
-    height: 87px;
-    padding: 31px 60px;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.75px;
-    background: #7B1DF3;
-    border-radius: 7px;
-}
-
-.homePage .dis button::before,
-.homePage .dis button::after{
-    background-color: #7B1DF3;
-    width: 245.667px;
-    height: 87px;
-    position: absolute;
-    top: 24rem;
-    left: -0.0vh;
-    border-radius: 20px;
-    z-index: -1;
-    content: "";
-    opacity: 0.7;
-}
-
-.homePage .dis button::before{
-    animation: anim 2s ease-out infinite;
-}
-
-.homePage .dis button::after{
-    animation: anim 2s 1s ease-out infinite;
-}
-
-@keyframes anim{
-    100%{
-        transform: scale(1.5,2);
-        opacity: 0;
-    }
-}
-
-.homePage .images > *{
-    position: absolute;
-}
-
-.homePage .images >:first-child{
-    width: 679px;
-    height: 769px;
-    top: 38.36px;
-    right: 152px;
-}
-
-.homePage .images >:nth-child(2){
-    width: 65px;
-    height: 67px;
-    top: 59px;
-    right: 177px;
-    animation: upDown 2s infinite ease;
-}
-
-.homePage .images >:nth-child(3){
-    width: 144px;
-    height: 144px;
-    top: 95px;
-    right: 692px;
-    animation: upDown 2s infinite ease;
-}
-
-.homePage .images >:nth-child(4){
-    width: 327px;
-    top: 235px;
-    right: 36px;
-    animation: upDown 2s infinite ease;
-}
-
-.homePage .images >:nth-child(5){
-    width: 58px;
-    height: 54px;
-    top:417.06px;
-    right: 825.21px;
-    animation: upDown 2s infinite ease;
-}
-
-.homePage .images >:nth-child(6){
-    width: 327px;
-    right: 533px;
-    top: 593px;
-    animation: upDown 2s infinite ease;
-}
-
-.homePage .images >:nth-child(7){
-    width: 159px;
-    height: 159px;
-    top: 626px;
-    right: 47px;
-    animation: upDown 2s infinite ease;
-}
-
-.homePage .images >:last-child{
-    width: 43px;
-    height: 44px;
-    right: 221px;
-    top: 736px;
-    animation: upDown 2s infinite ease;
-}
-
-@keyframes upDown{
-    0%{
-        transform: translateY(0%);
-    }
-    50%{
-        transform: translateY(-10%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
-
+/*---------------------------------background--------------------------------------*/
