@@ -247,3 +247,55 @@ header .btn_icon{
 }
 
 /*---------------------------------background--------------------------------------*/
+
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background-color: var(--background-color);
+    filter: saturate(2);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.color-box{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: var(--background-color);
+}
+
+.color-box:hover{
+    background: var(--purple) ;
+    opacity: 10%;
+    transition: durathion 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--purple) ;
+    ;
+    filter: blur(60px);
+    animation: animback 6s linear infinite;
+}
+
+@keyframes animback{
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
