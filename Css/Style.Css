@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lily+Script+One&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.circles > *{
+    filter: blur(210px);
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circles > :first-child{
+    width: 221px;
+    height: 211px;
+    background-color: red;
+    border-radius: 50%;
+    top: 182px;
+    left: 162px;
+}
+
+.circles > :nth-child(2){
+    width: 289px;
+    height: 276px;
+    background: #05FF00;
+    top: 647px;
+    left: 718px;
+}
+
+.circles > :last-child{
+    width: 289px;
+    height: 276px;
+    background: #0094FF;
+    top: 207px;
+    right: 206px;
+}
+
+header{
+    width: 100%;
+    height: 112px;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+header nav{
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav h1{
+    color: #000;
+    font-family: "Lily Script One";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    margin: 42px 250px 29px 186px;
+}
+
+nav ul li{
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    margin-left: 53px;
+    margin-top: 48px;
+    transition: 1s;
+}
+
+nav ul li:hover{
+    color: #7B1DF3;
+}
+
+header nav img{
+    width: 60px;
+    height: 60px;
+    margin-left: 56px;
+    margin-top: 29px;
+}
+
+header nav button{
+    width: 134px;
+    height: 51px;
+    border-radius: 26px;
+    background: #7B1DF3;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    margin-top: 37px;
+    margin-left: 109px;
+}
+
