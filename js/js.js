@@ -3,6 +3,9 @@ const btn = document.querySelector('.btn');
 const icon = document.querySelector('.btn_icon');
 const circles = document.querySelector('.circles');
 
+const settings = document.querySelector('.settingBtn');
+const settingForm = document.querySelector('.settings');
+
 let flag = false;
 
 btn.addEventListener('click', () => {
@@ -19,16 +22,15 @@ btn.addEventListener('click', () => {
 
     if(body.classList.contains('darkMode')){
         icon.classList.remove('fa-sun');
+        settings.src = "img/icons/Setting(light).gif";
         icon.classList.add('fa-moon');
     }
     else{
         icon.classList.remove('fa-moon');
+        settings.src = "img/icons/Setting.gif";
         icon.classList.add('fa-sun');
     }
 });
-
-const settings = document.querySelector('.settingBtn');
-const settingForm = document.querySelector('.settings');
 
 settings.addEventListener('click', () =>{
     event.preventDefault();

@@ -14,11 +14,13 @@
     --background-color : #fff;
     --text : #000;
     --purple : #7B1DF3;
+    --about-p : #8f8f8f;
 }
 
 body.alt-colors {
     --background-color : #252525;
     --text : #fff;
+    --about-p : #C0C0C2;
 }
 
 
@@ -250,7 +252,7 @@ header .btn_icon{
 
 
 .bgAnimation{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

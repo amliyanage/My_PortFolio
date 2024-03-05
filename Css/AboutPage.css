@@ -1,0 +1,145 @@
+.about{
+    position: relative;
+    top: 66vh;
+    z-index: -1;
+}
+
+.about div{
+    margin: 93px 62px 83px 64px;
+    backdrop-filter: blur(10px);
+}
+
+.about .form{
+    display: flex;
+    padding-top: 54px;
+    padding-left: 40px;
+    padding-bottom: 21px;
+    margin: 0;
+}
+
+.about div img{
+    width: 758px;
+    height: 829px;
+    margin-top: 54px;
+    margin-left: 40px;
+}
+
+.about div div{
+    display: block;
+}
+
+.about div div h5{
+color: #C0C0C2;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 28px;
+}
+
+.about div div h2{
+    color: var(--text);
+font-family: Roboto;
+font-size: 45px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 40px;
+}
+
+.about div div h2 span{
+    color: var(--purple);
+}
+
+.about div div p{
+color: var(--about-p);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+
+.about div div .working{
+    display: flex;
+    margin: 0;
+}
+
+.about .working div div{
+    display: flex;
+    margin: 0;
+}
+
+.about .working div div h1{
+color: var(--text);
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-right: 88px;
+margin-bottom: 47px;
+}
+
+.about .working div div i{
+    color: var(--purple);
+    font-size: 34px;
+    margin-right: 11px;
+}
+
+.about .working div{
+    margin: 0;
+    margin-top: 80px;
+}
+
+.about .contactInfo{
+    margin: 0;
+    display: flex;
+    width: 848px;
+height: 85px;
+border: 2px solid var(--text);
+border-radius: 10px;
+padding-top: 26px;
+padding-left: 27px;
+padding-bottom: 0px;
+}
+
+.about .contactInfo div{
+    display: flex;
+    margin: 0;
+}
+
+.about .contactInfo div div{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    margin-right: 22px;
+}
+
+.about .contactInfo div i{
+    font-size: 22px;
+    margin: 17px;
+}
+
+.about .contactInfo div h5{
+    color: var(--about-p);
+}
+
+.about .contactInfo div h3{
+    color: var(--text);
+font-family: Roboto;
+font-size: 21px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.63px;
+position: relative;
+top: 2vh;
+right: 7vh;
+}
+
+.about .contactInfo >:last-child h3{
+    right: 86px;
+}
