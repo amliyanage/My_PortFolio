@@ -6,7 +6,7 @@
 
 .about div{
     margin: 93px 62px 83px 64px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
 }
 
 .about .form{

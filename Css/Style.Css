@@ -130,7 +130,7 @@ header nav button{
 /*------------setting-----------------*/
 
 header .btn{
-    background-color: #fff;
+    background-color: var(--background-color);
     width: 12em;
     height: 5em;
     border-radius: 10em;
@@ -198,7 +198,7 @@ header .btn_icon{
     position: absolute;
     right: 20vh;
     padding: 1rem;
-    border: 2px solid var(--text);
+    border: 1px solid var(--text);
     background-color: var(--background-color);
     border-radius: 13px;
     display: none;

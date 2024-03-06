@@ -1,0 +1,203 @@
+.Resume{
+    position: relative;
+    top: 81vh;
+    z-index: -1;
+}
+
+.Resume >:first-child{
+    text-align: center;
+}
+
+.Resume >:first-child h5{
+color: var(--purple);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+}
+
+.Resume >:first-child h3{
+    color: var(--text);
+font-family: Inter;
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.76px;
+}
+
+.Resume >:nth-child(2){
+    display: flex;
+}
+
+.Resume >:nth-child(2) div{
+width: 441px;
+height: 133px;
+background-color: #1F1F1F;
+border-radius: 8px;
+}
+
+.Resume >:nth-child(2) div{
+    text-align: center;
+    margin-top: 74.5px;
+    margin-left: 19.6vh;
+}
+
+.Resume >:nth-child(2) div h2{
+color: var(--text);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+padding: 21px 70px 7px 77px;
+}
+
+.Resume >:nth-child(2) div h3{
+    color: #6A6357;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.64px;
+}
+
+.Resume >:nth-child(2) div h4{
+color: #B1B1A3;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.64px;
+padding-top: 18px;
+}
+
+.Resume >:nth-child(2) img{
+    width: 271.349px;
+height: 233.349px;
+margin-left: 68px;
+margin-top: 113px;
+}
+
+.Resume >:nth-child(3){
+    display: flex;
+}
+
+.Resume >:nth-child(3) div{
+width: 441px;
+height: 133px;
+background-color: #1F1F1F;
+border-radius: 8px;
+}
+
+.Resume >:nth-child(3) div{
+    text-align: center;
+    position: relative;
+    left: 136vh;
+    bottom: 5vh;
+}
+
+.Resume >:nth-child(3) div h2{
+color: var(--text);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+padding: 21px 70px 7px 77px;
+}
+
+.Resume >:nth-child(3) div h3{
+    color: #6A6357;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.64px;
+}
+
+.Resume >:nth-child(3) div h4{
+color: #B1B1A3;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.64px;
+padding-top: 18px;
+}
+
+.Resume >:nth-child(3) img{
+    width: 271.349px;
+height: 233.349px;
+margin-left: 68px;
+position: relative;
+bottom: 22vh;
+left: 45.5vh;
+rotate: 180deg;
+}
+
+.Resume >:nth-child(4){
+    display: flex;
+}
+
+.Resume >:nth-child(4) div{
+width: 441px;
+height: 133px;
+background-color: #1F1F1F;
+border-radius: 8px;
+}
+
+.Resume >:nth-child(4) div{
+    text-align: center;
+    margin-top: -45.5px;
+    margin-left: 19.6vh;
+}
+
+.Resume >:nth-child(4) div h2{
+color: var(--text);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+padding: 21px 70px 7px 77px;
+}
+
+.Resume >:nth-child(4) div h3{
+    color: #6A6357;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.64px;
+}
+
+.Resume >:nth-child(4) div h4{
+color: #B1B1A3;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.64px;
+padding-top: 18px;
+}
+
+.Resume >:nth-child(4) img{
+    width: 271.349px;
+height: 233.349px;
+position: relative;
+bottom: 22vh;
+left: 7.2vh;
+
+}

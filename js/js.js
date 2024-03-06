@@ -2,6 +2,7 @@ const body = document.querySelector('body')
 const btn = document.querySelector('.btn');
 const icon = document.querySelector('.btn_icon');
 const circles = document.querySelector('.circles');
+const aboutpic = document.querySelector('.about div img');
 
 const settings = document.querySelector('.settingBtn');
 const settingForm = document.querySelector('.settings');
@@ -23,11 +24,13 @@ btn.addEventListener('click', () => {
     if(body.classList.contains('darkMode')){
         icon.classList.remove('fa-sun');
         settings.src = "img/icons/Setting(light).gif";
+        aboutpic.src="img/Home-img/aboutpic-dark.png";
         icon.classList.add('fa-moon');
     }
     else{
         icon.classList.remove('fa-moon');
         settings.src = "img/icons/Setting.gif";
+        aboutpic.src="img/Home-img/aboutpic.png";
         icon.classList.add('fa-sun');
     }
 });
