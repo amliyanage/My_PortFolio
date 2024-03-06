@@ -4,6 +4,7 @@ const icon = document.querySelector('.btn_icon');
 const circles = document.querySelector('.circles');
 const aboutpic = document.querySelector('.about div img');
 
+
 const settings = document.querySelector('.settingBtn');
 const settingForm = document.querySelector('.settings');
 
@@ -40,16 +41,25 @@ settings.addEventListener('click', () =>{
     settingForm.classList.toggle('clicked');
 });
 
+const connectResume1 = document.querySelector('.Resume >:nth-child(2) img');
+const connectResume2 = document.querySelector('.Resume >:nth-child(3) img');
+const connectResume3 = document.querySelector('.Resume >:nth-child(4) img');
 function changeColor(color){
 
     console.log('api');
     switch(color){
         case 'purple' :
             document.documentElement.style.setProperty('--purple', '#7B1DF3');
+            connectResume1.src="img/connect-purple.png";
+            connectResume2.src="img/connect-purple.png";
+            connectResume3.src="img/connetOtherSide-purple.png";
             break;
 
         case 'yellow' :
             document.documentElement.style.setProperty('--purple', '#C9F31D');
+            connectResume1.src="img/connect.png";
+            connectResume2.src="img/connect.png";
+            connectResume3.src="img/connetOtherSide.png";
             break;
         
         case 'green' :

@@ -15,12 +15,14 @@
     --text : #000;
     --purple : #7B1DF3;
     --about-p : #8f8f8f;
+    --divBackInResume : rgba(0,0,0,0);
 }
 
 body.alt-colors {
     --background-color : #252525;
     --text : #fff;
     --about-p : #C0C0C2;
+    --divBackInResume : #1F1F1F;
 }
 
 

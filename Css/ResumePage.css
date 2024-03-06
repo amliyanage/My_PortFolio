@@ -35,12 +35,10 @@ letter-spacing: 0.76px;
 .Resume >:nth-child(2) div{
 width: 441px;
 height: 133px;
-background-color: #1F1F1F;
+background-color: var(--divBackInResume);
+border: 2px solid #1F1F1F;
 border-radius: 8px;
-}
-
-.Resume >:nth-child(2) div{
-    text-align: center;
+text-align: center;
     margin-top: 74.5px;
     margin-left: 19.6vh;
 }
@@ -91,16 +89,15 @@ margin-top: 113px;
 .Resume >:nth-child(3) div{
 width: 441px;
 height: 133px;
-background-color: #1F1F1F;
+background-color: var(--divBackInResume);
+border: 2px solid #1F1F1F;
 border-radius: 8px;
+text-align: center;
+position: relative;
+left: 136vh;
+bottom: 5vh;
 }
 
-.Resume >:nth-child(3) div{
-    text-align: center;
-    position: relative;
-    left: 136vh;
-    bottom: 5vh;
-}
 
 .Resume >:nth-child(3) div h2{
 color: var(--text);
@@ -114,7 +111,7 @@ padding: 21px 70px 7px 77px;
 }
 
 .Resume >:nth-child(3) div h3{
-    color: #6A6357;
+color: #6A6357;
 font-family: Inter;
 font-size: 16px;
 font-style: normal;
@@ -151,15 +148,17 @@ rotate: 180deg;
 .Resume >:nth-child(4) div{
 width: 441px;
 height: 133px;
-background-color: #1F1F1F;
+background-color: var(--divBackInResume);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 border-radius: 8px;
+border: 2px solid #1F1F1F;
+text-align: center;
+margin-top: -45.5px;
+margin-left: 19.6vh;
+z-index: 100;
 }
 
-.Resume >:nth-child(4) div{
-    text-align: center;
-    margin-top: -45.5px;
-    margin-left: 19.6vh;
-}
 
 .Resume >:nth-child(4) div h2{
 color: var(--text);
